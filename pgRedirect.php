@@ -12,9 +12,9 @@ $paramList = array();
 // $ORDER_ID = $_POST["ORDER_ID"];
 $ORDER_ID = $_POST["ORDER_ID"];
 $CUST_ID = $_POST["CUST_ID"];
-$INDUSTRY_TYPE_ID = $_POST["INDUSTRY_TYPE_ID"];
+$INDUSTRY_TYPE_ID = "Retail";
 $CHANNEL_ID = $_POST["CHANNEL_ID"];
-$TXN_AMOUNT = $_POST["amount"];
+$TXN_AMOUNT = $_POST["TXN_AMOUNT"];
 
 // Create an array having all required parameters for creating checksum.
 $paramList["MID"] = PAYTM_MERCHANT_MID;
