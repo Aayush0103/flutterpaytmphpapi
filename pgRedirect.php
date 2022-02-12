@@ -10,8 +10,8 @@ $checkSum = "";
 $paramList = array();
 
 // $ORDER_ID = $_POST["ORDER_ID"];
-$ORDER_ID = $_POST["orderID"];
-$CUST_ID = $_POST["custID"];
+$ORDER_ID = $_POST["order_ID"];
+$CUST_ID = $_POST["cust_ID"];
 $INDUSTRY_TYPE_ID = $_POST["INDUSTRY_TYPE_ID"];
 $CHANNEL_ID = $_POST["CHANNEL_ID"];
 $TXN_AMOUNT = $_POST["amount"];
@@ -25,7 +25,7 @@ $paramList["CHANNEL_ID"] = $CHANNEL_ID;
 $paramList["TXN_AMOUNT"] = $TXN_AMOUNT;
 $paramList["WEBSITE"] = PAYTM_MERCHANT_WEBSITE;
 $paramList["CALLBACK_URL"] = "https://flutter-backend-paytm.herokuapp.com/paymentReceipt";
-echo PAYTM_ENVIRONMENT;
+
 /*
 $paramList["CALLBACK_URL"] = "http://localhost/PaytmKit/pgResponse.php";
 $paramList["MSISDN"] = $MSISDN; //Mobile number of customer
