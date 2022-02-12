@@ -45,7 +45,7 @@ $PAYTM_FETCH_USER_BALANCE = "https://securegw-stage.paytm.in/userAsset/fetchBala
 </head>
 <body>
 	<center><h1>Please do not refresh this page...</h1></center>
-		<form method="post" action="<?php echo $PAYTM_FETCH_USER_BALANCE; ?>" name="f1">
+		<form method="post" action="<?php echo $PAYTM_FETCH_USER_BALANCE ?>" name="f1">
 		<table border="1">
 			<tbody>
 			<?php
