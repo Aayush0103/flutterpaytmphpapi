@@ -37,6 +37,7 @@ $paramList["IS_USER_VERIFIED"] = "YES"; //
 //Here checksum string will return by getChecksumFromArray() function.
 $checkSum = getChecksumFromArray($paramList,PAYTM_MERCHANT_KEY);
 $fetch_option = "https://securegw-stage.paytm.in/theia/api/v2/fetchPaymentOptions?mid=vLQkAT72546842461929&orderId=ORDERID_98765";
+$PAYTM_FETCH_USER_BALANCE = "https://securegw-stage.paytm.in/userAsset/fetchBalanceInfo?mid='".PAYTM_MERCHANT_MID."'&orderId='".ORDER_ID."'";
 ?>
 <html>
 <head>
@@ -44,7 +45,7 @@ $fetch_option = "https://securegw-stage.paytm.in/theia/api/v2/fetchPaymentOption
 </head>
 <body>
 	<center><h1>Please do not refresh this page...</h1></center>
-		<form method="post" action="<?php echo $fetch_option ?>" name="f1">
+		<form method="post" action="<?php echo $PAYTM_FETCH_USER_BALANCE; ?>" name="f1">
 		<table border="1">
 			<tbody>
 			<?php
