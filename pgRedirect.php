@@ -24,7 +24,7 @@ $paramList["INDUSTRY_TYPE_ID"] = $INDUSTRY_TYPE_ID;
 $paramList["CHANNEL_ID"] = $CHANNEL_ID;
 $paramList["TXN_AMOUNT"] = $TXN_AMOUNT;
 $paramList["WEBSITE"] = PAYTM_MERCHANT_WEBSITE;
-$paramList["CALLBACK_URL"] = "https://flutter-backend-paytm.herokuapp.com/pgResponse";
+$paramList["CALLBACK_URL"] = "https://flutter-backend-paytm.herokuapp.com/paymentReceipt";
 /*
 $paramList["CALLBACK_URL"] = "http://localhost/PaytmKit/pgResponse.php";
 $paramList["MSISDN"] = $MSISDN; //Mobile number of customer
