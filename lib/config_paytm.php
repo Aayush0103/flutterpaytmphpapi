@@ -14,6 +14,7 @@ define('PAYTM_MERCHANT_WEBSITE', 'WEBSTAGING'); //Change this constant's value w
 
 $PAYTM_STATUS_QUERY_NEW_URL='https://securegw-stage.paytm.in/merchant-status/getTxnStatus';
 $PAYTM_TXN_URL='https://securegw-stage.paytm.in/theia/processTransaction';
+$FETCH_PAYMENT_OPTION = 'https://securegw-stage.paytm.in/theia/api/v2/fetchPaymentOptions';
 
 if (PAYTM_ENVIRONMENT == 'PROD') {
 	$PAYTM_STATUS_QUERY_NEW_URL='https://securegw.paytm.in/merchant-status/getTxnStatus';
@@ -24,4 +25,5 @@ define('PAYTM_REFUND_URL', '');
 define('PAYTM_STATUS_QUERY_URL', $PAYTM_STATUS_QUERY_NEW_URL);
 define('PAYTM_STATUS_QUERY_NEW_URL', $PAYTM_STATUS_QUERY_NEW_URL);
 define('PAYTM_TXN_URL', $PAYTM_TXN_URL);
+define('FETCH_PAYMENT_OPTION',$FETCH_PAYMENT_OPTION);
 ?>
