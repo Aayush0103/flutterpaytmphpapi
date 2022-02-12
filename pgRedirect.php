@@ -10,8 +10,8 @@ $checkSum = "";
 $paramList = array();
 
 // $ORDER_ID = $_POST["ORDER_ID"];
-$ORDER_ID = $_POST["order_ID"];
-$CUST_ID = $_POST["cust_ID"];
+$ORDER_ID = $_POST["ORDER_ID"];
+$CUST_ID = $_POST["CUST_ID"];
 $INDUSTRY_TYPE_ID = $_POST["INDUSTRY_TYPE_ID"];
 $CHANNEL_ID = $_POST["CHANNEL_ID"];
 $TXN_AMOUNT = $_POST["amount"];
