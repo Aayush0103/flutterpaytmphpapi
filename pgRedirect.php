@@ -44,7 +44,7 @@ $fetch_option = "https://securegw-stage.paytm.in/theia/api/v2/fetchPaymentOption
 </head>
 <body>
 	<center><h1>Please do not refresh this page...</h1></center>
-		<form method="post" action="<?php echo $fetch_option ?>" name="f1">
+		<form method="post" action="<?php echo FETCH_PAYMENT_OPTION ?>" name="f1">
 		<table border="1">
 			<tbody>
 			<?php
