@@ -10,12 +10,13 @@ $checkSum = "";
 $paramList = array();
 
 // $ORDER_ID = $_POST["ORDER_ID"];
-$ORDER_ID = $_POST["ORDER_ID"];
-$CUST_ID = $_POST["CUST_ID"];
-$INDUSTRY_TYPE_ID = "Retail";
+$ORDER_ID = $_POST["orderID"];
+$CUST_ID = $_POST["custID"];
+$INDUSTRY_TYPE_ID = $_POST["INDUSTRY_TYPE_ID"];
 $CHANNEL_ID = $_POST["CHANNEL_ID"];
-$TXN_AMOUNT = $_POST["TXN_AMOUNT"];
-
+$TXN_AMOUNT = $_POST["amount"];
+$PAYTM_FETCH_USER_BALANCE = "https://securegw-stage.paytm.in/userAsset/fetchBalanceInfo?mid='".PAYTM_MERCHANT_MID."'&orderId='".ORDER_ID."'";
+$FETCH_PAYMENT_OPTION = "https://securegw-stage.paytm.in/theia/api/v2/fetchPaymentOptions?mid='".PAYTM_MERCHANT_MID."'&orderId='".ORDER_ID."'";
 // Create an array having all required parameters for creating checksum.
 $paramList["MID"] = PAYTM_MERCHANT_MID;
 $paramList["ORDER_ID"] = $ORDER_ID;
@@ -25,7 +26,6 @@ $paramList["CHANNEL_ID"] = $CHANNEL_ID;
 $paramList["TXN_AMOUNT"] = $TXN_AMOUNT;
 $paramList["WEBSITE"] = PAYTM_MERCHANT_WEBSITE;
 $paramList["CALLBACK_URL"] = "https://flutter-backend-paytm.herokuapp.com/paymentReceipt";
-
 /*
 $paramList["CALLBACK_URL"] = "http://localhost/PaytmKit/pgResponse.php";
 $paramList["MSISDN"] = $MSISDN; //Mobile number of customer
@@ -45,7 +45,7 @@ $checkSum = getChecksumFromArray($paramList,PAYTM_MERCHANT_KEY);
 </head>
 <body>
 	<center><h1>Please do not refresh this page...</h1></center>
-		<form method="post" action="<?php echo PAYTM_TXN_URL ?>" name="f1">
+		<form method="post" action="<?php echo $FETCH_PAYMENT_OPTION ?>" name="f1">
 		<table border="1">
 			<tbody>
 			<?php
