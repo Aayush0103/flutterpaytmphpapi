@@ -36,7 +36,7 @@ $paramList["IS_USER_VERIFIED"] = "YES"; //
 
 //Here checksum string will return by getChecksumFromArray() function.
 $checkSum = getChecksumFromArray($paramList,PAYTM_MERCHANT_KEY);
-$fetch_option = "https://securegw-stage.paytm.in/theia/api/v2/fetchPaymentOptions?mid='".PAYTM_MERCHANT_MID."'&orderId=ORDERID_98765";
+$fetch_option = "https://securegw-stage.paytm.in/theia/api/v2/fetchPaymentOptions?mid='vLQkAT72546842461929'&orderId='ORDERID_98765'";
 ?>
 <html>
 <head>
